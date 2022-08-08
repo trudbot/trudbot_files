@@ -1,0 +1,19 @@
+{
+    "files.associations": {
+        "stdio.h": "c",
+        "stdlib.h": "c",
+        "cstdlib": "c",
+        "typeinfo": "c",
+        "string.h": "c",
+        "algorithm": "cpp",
+        "iostream": "cpp"
+    },
+    "cSpell.words": [
+        "Adelson",
+        "bucketsort",
+        "Heapify",
+        "LVIII",
+        "MCMXCIV",
+        "QKSORT"
+    ]
+}
