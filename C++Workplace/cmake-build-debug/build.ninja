@@ -470,6 +470,39 @@ build 691.exe: CXX_EXECUTABLE_LINKER__691_Debug CMakeFiles/691.dir/AcWing/2022Su
   TARGET_PDB = 691.exe.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target 2070
+
+
+#############################################
+# Order-only phony target for 2070
+
+build cmake_object_order_depends_target_2070: phony || CMakeFiles/2070.dir
+
+build CMakeFiles/2070.dir/AcWing/2022SummerDaily/week10/2070.cpp.obj: CXX_COMPILER__2070_Debug D$:/trudbot_files/C++Workplace/AcWing/2022SummerDaily/week10/2070.cpp || cmake_object_order_depends_target_2070
+  DEP_FILE = CMakeFiles\2070.dir\AcWing\2022SummerDaily\week10\2070.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\2070.dir
+  OBJECT_FILE_DIR = CMakeFiles\2070.dir\AcWing\2022SummerDaily\week10
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 2070
+
+
+#############################################
+# Link the executable 2070.exe
+
+build 2070.exe: CXX_EXECUTABLE_LINKER__2070_Debug CMakeFiles/2070.dir/AcWing/2022SummerDaily/week10/2070.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\2070.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 2070.exe
+  TARGET_IMPLIB = lib2070.dll.a
+  TARGET_PDB = 2070.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target 4461
 
 
@@ -1040,6 +1073,39 @@ build 3564.exe: CXX_EXECUTABLE_LINKER__3564_Debug CMakeFiles/3564.dir/AcWing/202
   TARGET_FILE = 3564.exe
   TARGET_IMPLIB = lib3564.dll.a
   TARGET_PDB = 3564.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 3330
+
+
+#############################################
+# Order-only phony target for 3330
+
+build cmake_object_order_depends_target_3330: phony || CMakeFiles/3330.dir
+
+build CMakeFiles/3330.dir/google_kickstart/2020/3330.cpp.obj: CXX_COMPILER__3330_Debug D$:/trudbot_files/C++Workplace/google$ kickstart/2020/3330.cpp || cmake_object_order_depends_target_3330
+  DEP_FILE = CMakeFiles\3330.dir\google_kickstart\2020\3330.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\3330.dir
+  OBJECT_FILE_DIR = CMakeFiles\3330.dir\google_kickstart\2020
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 3330
+
+
+#############################################
+# Link the executable 3330.exe
+
+build 3330.exe: CXX_EXECUTABLE_LINKER__3330_Debug CMakeFiles/3330.dir/google_kickstart/2020/3330.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\3330.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 3330.exe
+  TARGET_IMPLIB = lib3330.dll.a
+  TARGET_PDB = 3330.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target 3587
@@ -5438,6 +5504,8 @@ build 2021_2611: phony 2021_2611.exe
 
 build 2021_2612: phony 2021_2612.exe
 
+build 2070: phony 2070.exe
+
 build 2074: phony 2074.exe
 
 build 23: phony 23.exe
@@ -5467,6 +5535,8 @@ build 3311: phony 3311.exe
 build 3325: phony 3325.exe
 
 build 3329: phony 3329.exe
+
+build 3330: phony 3330.exe
 
 build 3381: phony 3381.exe
 
@@ -5744,7 +5814,7 @@ build unique: phony unique.exe
 #############################################
 # Folder: D:/trudbot_files/C++Workplace/cmake-build-debug
 
-build all: phony 3311.exe 3452.exe 842.exe 3474.exe 3438.exe 3428+.exe 4277.exe 3555+.exe 4278.exe 55.exe 800.exe 4279.exe 691.exe 4461.exe 3712.exe 3428.exe 3477.exe 02.exe 787.exe 3511.exe 693.exe 3540.exe 415.exe 3531.exe 4533.exe 3381.exe 63+.exe 798.exe 3537.exe 3564.exe 3587.exe 3598.exe 3625.exe 788.exe demo.exe 3540+.exe 793.exe 3619.exe 791.exe 3644.exe 3652.exe 3715.exe 3588.exe 4518.exe 3432.exe RoboCom_2.exe 3601.exe 3555.exe 3559.exe 4519.exe 3593.exe 3589.exe 2074.exe 790+.exe 03.exe 786.exe 789.exe 790.exe 792.exe 791+.exe 793+.exe 794.exe 795.exe 796+.exe 837.exe 4383.exe 796.exe MergeSort.exe 797+.exe 836.exe 4382.exe 797.exe 799.exe 802.exe 847.exe 848.exe 849.exe 850.exe 854.exe 240.exe 30.exe 3325.exe 3329.exe 3400.exe 3475.exe 4122.exe 3512.exe unique.exe 692.exe 3541.exe 3543.exe 3748.exe 3752.exe 41.exe 4159.exe 4280.exe 42.exe 425.exe 4270.exe 4271.exe 2320.exe 43.exe 44.exe 4443.exe 4483.exe 4485.exe 4486.exe 4489.exe 4490+.exe 63++.exe 4490.exe 4492.exe 4493.exe RoboCom_1.exe 45.exe 4522.exe 4523+.exe 4523.exe RoboCom_3.exe 47.exe 49.exe 537.exe 600.exe 692+.exe 698.exe m_1.exe m_2.exe 01.exe 02+.exe 2021_2611.exe 03+.exe 04.exe 05.exe QSort.exe QuickPow.exe Dijtstra.exe Floyd.exe TopSort.exe dijkstra+.exe primeFactor.exe union_find_set.exe CMakeCXXCompilerId.exe 236+.exe Trapezoid_Counting.exe 1.exe 2021_2610.exe 2021_2612.exe 236++.exe 236.exe 297.exe 63.exe 148.exe 15.exe 23.exe 2319.exe 2666.exe 3.exe 8.exe 6132.exe 6133.exe 6134.exe main.exe
+build all: phony 3311.exe 3452.exe 842.exe 3474.exe 3438.exe 3428+.exe 4277.exe 3555+.exe 4278.exe 55.exe 800.exe 4279.exe 691.exe 2070.exe 4461.exe 3712.exe 3428.exe 3477.exe 02.exe 787.exe 3511.exe 693.exe 3540.exe 415.exe 3531.exe 4533.exe 3381.exe 63+.exe 798.exe 3537.exe 3564.exe 3330.exe 3587.exe 3598.exe 3625.exe 788.exe demo.exe 3540+.exe 793.exe 3619.exe 791.exe 3644.exe 3652.exe 3715.exe 3588.exe 4518.exe 3432.exe RoboCom_2.exe 3601.exe 3555.exe 3559.exe 4519.exe 3593.exe 3589.exe 2074.exe 790+.exe 03.exe 786.exe 789.exe 790.exe 792.exe 791+.exe 793+.exe 794.exe 795.exe 796+.exe 837.exe 4383.exe 796.exe MergeSort.exe 797+.exe 836.exe 4382.exe 797.exe 799.exe 802.exe 847.exe 848.exe 849.exe 850.exe 854.exe 240.exe 30.exe 3325.exe 3329.exe 3400.exe 3475.exe 4122.exe 3512.exe unique.exe 692.exe 3541.exe 3543.exe 3748.exe 3752.exe 41.exe 4159.exe 4280.exe 42.exe 425.exe 4270.exe 4271.exe 2320.exe 43.exe 44.exe 4443.exe 4483.exe 4485.exe 4486.exe 4489.exe 4490+.exe 63++.exe 4490.exe 4492.exe 4493.exe RoboCom_1.exe 45.exe 4522.exe 4523+.exe 4523.exe RoboCom_3.exe 47.exe 49.exe 537.exe 600.exe 692+.exe 698.exe m_1.exe m_2.exe 01.exe 02+.exe 2021_2611.exe 03+.exe 04.exe 05.exe QSort.exe QuickPow.exe Dijtstra.exe Floyd.exe TopSort.exe dijkstra+.exe primeFactor.exe union_find_set.exe CMakeCXXCompilerId.exe 236+.exe Trapezoid_Counting.exe 1.exe 2021_2610.exe 2021_2612.exe 236++.exe 236.exe 297.exe 63.exe 148.exe 15.exe 23.exe 2319.exe 2666.exe 3.exe 8.exe 6132.exe 6133.exe 6134.exe main.exe
 
 # =============================================================================
 # Built-in targets
