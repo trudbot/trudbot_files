@@ -37,7 +37,7 @@ public:
         encode(root->right, ans);
     }
 
-    // Decodes your encoded data to tree.
+    // Decodes your encoded dat to tree.
     TreeNode *deserialize(string data) {
         vector<string> dat;
         string tmp;

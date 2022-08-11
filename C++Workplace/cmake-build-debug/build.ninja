@@ -4870,6 +4870,72 @@ build Trapezoid_Counting.exe: CXX_EXECUTABLE_LINKER__Trapezoid_Counting_Debug CM
   TARGET_PDB = Trapezoid_Counting.exe.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target 3321
+
+
+#############################################
+# Order-only phony target for 3321
+
+build cmake_object_order_depends_target_3321: phony || CMakeFiles/3321.dir
+
+build CMakeFiles/3321.dir/google_kickstart/2020/3321.cpp.obj: CXX_COMPILER__3321_Debug D$:/trudbot_files/C++Workplace/google$ kickstart/2020/3321.cpp || cmake_object_order_depends_target_3321
+  DEP_FILE = CMakeFiles\3321.dir\google_kickstart\2020\3321.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\3321.dir
+  OBJECT_FILE_DIR = CMakeFiles\3321.dir\google_kickstart\2020
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 3321
+
+
+#############################################
+# Link the executable 3321.exe
+
+build 3321.exe: CXX_EXECUTABLE_LINKER__3321_Debug CMakeFiles/3321.dir/google_kickstart/2020/3321.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\3321.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 3321.exe
+  TARGET_IMPLIB = lib3321.dll.a
+  TARGET_PDB = 3321.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 4118
+
+
+#############################################
+# Order-only phony target for 4118
+
+build cmake_object_order_depends_target_4118: phony || CMakeFiles/4118.dir
+
+build CMakeFiles/4118.dir/google_kickstart/2021/4118.cpp.obj: CXX_COMPILER__4118_Debug D$:/trudbot_files/C++Workplace/google$ kickstart/2021/4118.cpp || cmake_object_order_depends_target_4118
+  DEP_FILE = CMakeFiles\4118.dir\google_kickstart\2021\4118.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\4118.dir
+  OBJECT_FILE_DIR = CMakeFiles\4118.dir\google_kickstart\2021
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 4118
+
+
+#############################################
+# Link the executable 4118.exe
+
+build 4118.exe: CXX_EXECUTABLE_LINKER__4118_Debug CMakeFiles/4118.dir/google_kickstart/2021/4118.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\4118.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 4118.exe
+  TARGET_IMPLIB = lib4118.dll.a
+  TARGET_PDB = 4118.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target 1
 
 
@@ -5066,6 +5132,39 @@ build 297.exe: CXX_EXECUTABLE_LINKER__297_Debug CMakeFiles/297.dir/leetcode/byte
   TARGET_FILE = 297.exe
   TARGET_IMPLIB = lib297.dll.a
   TARGET_PDB = 297.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 456
+
+
+#############################################
+# Order-only phony target for 456
+
+build cmake_object_order_depends_target_456: phony || CMakeFiles/456.dir
+
+build CMakeFiles/456.dir/leetcode/byte_dance_daily/456.cpp.obj: CXX_COMPILER__456_Debug D$:/trudbot_files/C++Workplace/leetcode/byte$ dance$ daily/456.cpp || cmake_object_order_depends_target_456
+  DEP_FILE = CMakeFiles\456.dir\leetcode\byte_dance_daily\456.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\456.dir
+  OBJECT_FILE_DIR = CMakeFiles\456.dir\leetcode\byte_dance_daily
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 456
+
+
+#############################################
+# Link the executable 456.exe
+
+build 456.exe: CXX_EXECUTABLE_LINKER__456_Debug CMakeFiles/456.dir/leetcode/byte_dance_daily/456.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\456.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 456.exe
+  TARGET_IMPLIB = lib456.dll.a
+  TARGET_PDB = 456.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target 63
@@ -5532,6 +5631,8 @@ build 30: phony 30.exe
 
 build 3311: phony 3311.exe
 
+build 3321: phony 3321.exe
+
 build 3325: phony 3325.exe
 
 build 3329: phony 3329.exe
@@ -5612,6 +5713,8 @@ build 3752: phony 3752.exe
 
 build 41: phony 41.exe
 
+build 4118: phony 4118.exe
+
 build 4122: phony 4122.exe
 
 build 415: phony 415.exe
@@ -5675,6 +5778,8 @@ build 4523: phony 4523.exe
 build 4523+: phony 4523+.exe
 
 build 4533: phony 4533.exe
+
+build 456: phony 456.exe
 
 build 47: phony 47.exe
 
@@ -5814,7 +5919,7 @@ build unique: phony unique.exe
 #############################################
 # Folder: D:/trudbot_files/C++Workplace/cmake-build-debug
 
-build all: phony 3311.exe 3452.exe 842.exe 3474.exe 3438.exe 3428+.exe 4277.exe 3555+.exe 4278.exe 55.exe 800.exe 4279.exe 691.exe 2070.exe 4461.exe 3712.exe 3428.exe 3477.exe 02.exe 787.exe 3511.exe 693.exe 3540.exe 415.exe 3531.exe 4533.exe 3381.exe 63+.exe 798.exe 3537.exe 3564.exe 3330.exe 3587.exe 3598.exe 3625.exe 788.exe demo.exe 3540+.exe 793.exe 3619.exe 791.exe 3644.exe 3652.exe 3715.exe 3588.exe 4518.exe 3432.exe RoboCom_2.exe 3601.exe 3555.exe 3559.exe 4519.exe 3593.exe 3589.exe 2074.exe 790+.exe 03.exe 786.exe 789.exe 790.exe 792.exe 791+.exe 793+.exe 794.exe 795.exe 796+.exe 837.exe 4383.exe 796.exe MergeSort.exe 797+.exe 836.exe 4382.exe 797.exe 799.exe 802.exe 847.exe 848.exe 849.exe 850.exe 854.exe 240.exe 30.exe 3325.exe 3329.exe 3400.exe 3475.exe 4122.exe 3512.exe unique.exe 692.exe 3541.exe 3543.exe 3748.exe 3752.exe 41.exe 4159.exe 4280.exe 42.exe 425.exe 4270.exe 4271.exe 2320.exe 43.exe 44.exe 4443.exe 4483.exe 4485.exe 4486.exe 4489.exe 4490+.exe 63++.exe 4490.exe 4492.exe 4493.exe RoboCom_1.exe 45.exe 4522.exe 4523+.exe 4523.exe RoboCom_3.exe 47.exe 49.exe 537.exe 600.exe 692+.exe 698.exe m_1.exe m_2.exe 01.exe 02+.exe 2021_2611.exe 03+.exe 04.exe 05.exe QSort.exe QuickPow.exe Dijtstra.exe Floyd.exe TopSort.exe dijkstra+.exe primeFactor.exe union_find_set.exe CMakeCXXCompilerId.exe 236+.exe Trapezoid_Counting.exe 1.exe 2021_2610.exe 2021_2612.exe 236++.exe 236.exe 297.exe 63.exe 148.exe 15.exe 23.exe 2319.exe 2666.exe 3.exe 8.exe 6132.exe 6133.exe 6134.exe main.exe
+build all: phony 3311.exe 3452.exe 842.exe 3474.exe 3438.exe 3428+.exe 4277.exe 3555+.exe 4278.exe 55.exe 800.exe 4279.exe 691.exe 2070.exe 4461.exe 3712.exe 3428.exe 3477.exe 02.exe 787.exe 3511.exe 693.exe 3540.exe 415.exe 3531.exe 4533.exe 3381.exe 63+.exe 798.exe 3537.exe 3564.exe 3330.exe 3587.exe 3598.exe 3625.exe 788.exe demo.exe 3540+.exe 793.exe 3619.exe 791.exe 3644.exe 3652.exe 3715.exe 3588.exe 4518.exe 3432.exe RoboCom_2.exe 3601.exe 3555.exe 3559.exe 4519.exe 3593.exe 3589.exe 2074.exe 790+.exe 03.exe 786.exe 789.exe 790.exe 792.exe 791+.exe 793+.exe 794.exe 795.exe 796+.exe 837.exe 4383.exe 796.exe MergeSort.exe 797+.exe 836.exe 4382.exe 797.exe 799.exe 802.exe 847.exe 848.exe 849.exe 850.exe 854.exe 240.exe 30.exe 3325.exe 3329.exe 3400.exe 3475.exe 4122.exe 3512.exe unique.exe 692.exe 3541.exe 3543.exe 3748.exe 3752.exe 41.exe 4159.exe 4280.exe 42.exe 425.exe 4270.exe 4271.exe 2320.exe 43.exe 44.exe 4443.exe 4483.exe 4485.exe 4486.exe 4489.exe 4490+.exe 63++.exe 4490.exe 4492.exe 4493.exe RoboCom_1.exe 45.exe 4522.exe 4523+.exe 4523.exe RoboCom_3.exe 47.exe 49.exe 537.exe 600.exe 692+.exe 698.exe m_1.exe m_2.exe 01.exe 02+.exe 2021_2611.exe 03+.exe 04.exe 05.exe QSort.exe QuickPow.exe Dijtstra.exe Floyd.exe TopSort.exe dijkstra+.exe primeFactor.exe union_find_set.exe CMakeCXXCompilerId.exe 236+.exe Trapezoid_Counting.exe 3321.exe 4118.exe 1.exe 2021_2610.exe 2021_2612.exe 236++.exe 236.exe 297.exe 456.exe 63.exe 148.exe 15.exe 23.exe 2319.exe 2666.exe 3.exe 8.exe 6132.exe 6133.exe 6134.exe main.exe
 
 # =============================================================================
 # Built-in targets

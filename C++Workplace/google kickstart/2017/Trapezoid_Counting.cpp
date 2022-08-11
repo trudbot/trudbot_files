@@ -57,7 +57,7 @@ int main() {
             if(data[i].second < 3) continue;
             ll x = data[i].first, y = data[i].second;
 //            ll r = i;
-//            while(r+1 <= n && data[r+1].first < 3*x) r++;
+//            while(r+1 <= n && dat[r+1].first < 3*x) r++;
             ll r = find(data, 3*x, i);
             ans += (pref[r] - y) * C(y, 3);
         }
@@ -70,7 +70,7 @@ int main() {
                 if(i == j) continue;
                 ll upper = (ll)data[j].first + 2 * (ll)data[i].first;
 //                ll k = j;
-//                while(k+1 <= n && data[k+1].first < upper) k++;
+//                while(k+1 <= n && dat[k+1].first < upper) k++;
                 ll k = find(data, upper, j);
                 ll num = pref[k] - pref[j];
                 if(i > j) num -= data[i].second;

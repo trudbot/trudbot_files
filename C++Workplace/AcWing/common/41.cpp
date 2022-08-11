@@ -12,7 +12,7 @@ using namespace std;
 
 class MinStack {
 public:
-    /** initialize your data structure here. */
+    /** initialize your dat structure here. */
     int minVal[110];
     int data[110];
     int tail;
