@@ -1,27 +1,31 @@
+
+//
+// Created by trudbot on 2022/8/12.
+//
+
+//pragma GCC optimize(2)
 #include <bits/stdc++.h>
+
 using namespace std;
+typedef long long ll;
+typedef pair<int, int> pii;
+typedef vector<int> vi;
 
-class Solution {
-public:
-    bool verifySequenceOfBST(vector<int> sequence) {
-        return judge(sequence, 0, sequence.size()-1);
-    }
-
-    bool judge(vector<int> &a, int l, int r)
-    {
-        if(l >= r) return true;
-        int mid = l;
-        while(mid < r && a[mid] < a[r]) mid++;
-        for(int i=mid; i<r; i++)
-            if(a[i] < a[r]) return false;
-        return judge(a, l, mid-1) && judge(a, mid, r-1);
-    }
-};
+#define FASTIO ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL)
+#define rep(i, from, to) for(int (i)=from; (i)<(to); (i)++)
+#define each(a, x) for(auto &(a) : (x))
+#define sz(x) (int)(x).size()
+#define x first
+#define y second
+#define ins insert
+#define pb push_back
+#define pq priority_queue
+#define umap unordered_map
+#define uset unordered_set
 
 int main() {
-    Solution s;
-    vector<int> data{1, 2, 5, 4, 9, 10, 7, 3, 6, 8};
-    cout << s.verifySequenceOfBST(data);
+    FASTIO;
+    vi v = {1, 3, 9};
+    rep(i, 0, sz(v)) cout << v[i] << " ";
     return 0;
 }
-
