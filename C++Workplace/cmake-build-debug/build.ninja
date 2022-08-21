@@ -2593,6 +2593,39 @@ build 847.exe: CXX_EXECUTABLE_LINKER__847_Debug CMakeFiles/847.dir/AcWing/Algori
   TARGET_PDB = 847.exe.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target 3322
+
+
+#############################################
+# Order-only phony target for 3322
+
+build cmake_object_order_depends_target_3322: phony || CMakeFiles/3322.dir
+
+build CMakeFiles/3322.dir/google_kickstart/2020/3322.cpp.obj: CXX_COMPILER__3322_Debug D$:/trudbot_files/C++Workplace/google$ kickstart/2020/3322.cpp || cmake_object_order_depends_target_3322
+  DEP_FILE = CMakeFiles\3322.dir\google_kickstart\2020\3322.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\3322.dir
+  OBJECT_FILE_DIR = CMakeFiles\3322.dir\google_kickstart\2020
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 3322
+
+
+#############################################
+# Link the executable 3322.exe
+
+build 3322.exe: CXX_EXECUTABLE_LINKER__3322_Debug CMakeFiles/3322.dir/google_kickstart/2020/3322.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\3322.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 3322.exe
+  TARGET_IMPLIB = lib3322.dll.a
+  TARGET_PDB = 3322.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target 848
 
 
@@ -4804,6 +4837,138 @@ build CMakeCXXCompilerId.exe: CXX_EXECUTABLE_LINKER__CMakeCXXCompilerId_Debug CM
   TARGET_PDB = CMakeCXXCompilerId.exe.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target 700
+
+
+#############################################
+# Order-only phony target for 700
+
+build cmake_object_order_depends_target_700: phony || CMakeFiles/700.dir
+
+build CMakeFiles/700.dir/google_kickstart/2013/700.cpp.obj: CXX_COMPILER__700_Debug D$:/trudbot_files/C++Workplace/google$ kickstart/2013/700.cpp || cmake_object_order_depends_target_700
+  DEP_FILE = CMakeFiles\700.dir\google_kickstart\2013\700.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\700.dir
+  OBJECT_FILE_DIR = CMakeFiles\700.dir\google_kickstart\2013
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 700
+
+
+#############################################
+# Link the executable 700.exe
+
+build 700.exe: CXX_EXECUTABLE_LINKER__700_Debug CMakeFiles/700.dir/google_kickstart/2013/700.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\700.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 700.exe
+  TARGET_IMPLIB = lib700.dll.a
+  TARGET_PDB = 700.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 703
+
+
+#############################################
+# Order-only phony target for 703
+
+build cmake_object_order_depends_target_703: phony || CMakeFiles/703.dir
+
+build CMakeFiles/703.dir/google_kickstart/2013/703.cpp.obj: CXX_COMPILER__703_Debug D$:/trudbot_files/C++Workplace/google$ kickstart/2013/703.cpp || cmake_object_order_depends_target_703
+  DEP_FILE = CMakeFiles\703.dir\google_kickstart\2013\703.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\703.dir
+  OBJECT_FILE_DIR = CMakeFiles\703.dir\google_kickstart\2013
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 703
+
+
+#############################################
+# Link the executable 703.exe
+
+build 703.exe: CXX_EXECUTABLE_LINKER__703_Debug CMakeFiles/703.dir/google_kickstart/2013/703.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\703.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 703.exe
+  TARGET_IMPLIB = lib703.dll.a
+  TARGET_PDB = 703.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 683
+
+
+#############################################
+# Order-only phony target for 683
+
+build cmake_object_order_depends_target_683: phony || CMakeFiles/683.dir
+
+build CMakeFiles/683.dir/google_kickstart/2014/683.cpp.obj: CXX_COMPILER__683_Debug D$:/trudbot_files/C++Workplace/google$ kickstart/2014/683.cpp || cmake_object_order_depends_target_683
+  DEP_FILE = CMakeFiles\683.dir\google_kickstart\2014\683.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\683.dir
+  OBJECT_FILE_DIR = CMakeFiles\683.dir\google_kickstart\2014
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 683
+
+
+#############################################
+# Link the executable 683.exe
+
+build 683.exe: CXX_EXECUTABLE_LINKER__683_Debug CMakeFiles/683.dir/google_kickstart/2014/683.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\683.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 683.exe
+  TARGET_IMPLIB = lib683.dll.a
+  TARGET_PDB = 683.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 627
+
+
+#############################################
+# Order-only phony target for 627
+
+build cmake_object_order_depends_target_627: phony || CMakeFiles/627.dir
+
+build CMakeFiles/627.dir/google_kickstart/2016/627.cpp.obj: CXX_COMPILER__627_Debug D$:/trudbot_files/C++Workplace/google$ kickstart/2016/627.cpp || cmake_object_order_depends_target_627
+  DEP_FILE = CMakeFiles\627.dir\google_kickstart\2016\627.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\627.dir
+  OBJECT_FILE_DIR = CMakeFiles\627.dir\google_kickstart\2016
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 627
+
+
+#############################################
+# Link the executable 627.exe
+
+build 627.exe: CXX_EXECUTABLE_LINKER__627_Debug CMakeFiles/627.dir/google_kickstart/2016/627.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\627.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 627.exe
+  TARGET_IMPLIB = lib627.dll.a
+  TARGET_PDB = 627.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target 236+
 
 
@@ -5930,6 +6095,8 @@ build 3311: phony 3311.exe
 
 build 3321: phony 3321.exe
 
+build 3322: phony 3322.exe
+
 build 3325: phony 3325.exe
 
 build 3326: phony 3326.exe
@@ -6110,11 +6277,15 @@ build 6133: phony 6133.exe
 
 build 6134: phony 6134.exe
 
+build 627: phony 627.exe
+
 build 63: phony 63.exe
 
 build 63+: phony 63+.exe
 
 build 63++: phony 63++.exe
+
+build 683: phony 683.exe
 
 build 691: phony 691.exe
 
@@ -6125,6 +6296,10 @@ build 692+: phony 692+.exe
 build 693: phony 693.exe
 
 build 698: phony 698.exe
+
+build 700: phony 700.exe
+
+build 703: phony 703.exe
 
 build 733: phony 733.exe
 
@@ -6234,7 +6409,7 @@ build unique: phony unique.exe
 #############################################
 # Folder: D:/trudbot_files/C++Workplace/cmake-build-debug
 
-build all: phony 3311.exe 3452.exe 842.exe 3474.exe 3438.exe 3428+.exe 4277.exe 3555+.exe 4278.exe 55.exe 800.exe 4279.exe 691.exe 2070.exe 4461.exe 3712.exe 3428.exe 3477.exe 02.exe 787.exe 3511.exe 693.exe 3540.exe 415.exe 3531.exe 4533.exe 3381.exe 63+.exe 798.exe 3537.exe 3564.exe 3330.exe 3587.exe 3598.exe 3625.exe 788.exe demo.exe 3540+.exe 793.exe 3619.exe 791.exe 3644.exe 3652.exe 3715.exe 3588.exe 4518.exe 3432.exe RoboCom_2.exe 3601.exe 3555.exe 3559.exe 4519.exe 3593.exe 3589.exe 2074.exe 790+.exe 03.exe 786.exe 789.exe 790.exe 792.exe 791+.exe 793+.exe 794.exe 795.exe 796+.exe 837.exe 4383.exe 796.exe MergeSort.exe 797+.exe 836.exe 4382.exe 797.exe 799.exe 802.exe 847.exe 848.exe 849.exe 850.exe 854.exe 240.exe 30.exe 3325.exe 3329.exe 3400.exe 3475.exe 4122.exe 3512.exe unique.exe 692.exe 3541.exe 3543.exe 3748.exe 3752.exe 41.exe 4159.exe 4280.exe 42.exe 425.exe 4270.exe 4271.exe 2320.exe 43.exe 44.exe 4443.exe 4483.exe 4485.exe 4486.exe 4489.exe 4490+.exe 63++.exe 4490.exe 4492.exe 4493.exe RoboCom_1.exe 45.exe 4522.exe 4523+.exe 4523.exe RoboCom_3.exe 47.exe 49.exe 537.exe 600.exe 692+.exe 698.exe m_1.exe m_2.exe 01.exe 02+.exe 2021_2611.exe 03+.exe 04.exe 05.exe QSort.exe QuickPow.exe Dijtstra.exe Floyd.exe TopSort.exe dijkstra+.exe primeFactor.exe union_find_set.exe CMakeCXXCompilerId.exe 236+.exe Trapezoid_Counting.exe 733.exe 3321.exe 3326.exe 3753.exe 3835.exe 4110.exe 4114.exe 4118.exe 4444.exe 4460.exe 1.exe 4405.exe 2021_2610.exe 2021_2612.exe 236++.exe 236.exe 297.exe 456.exe 63.exe 148.exe 15.exe 23.exe 2319.exe 2666.exe 3.exe 8.exe 6132.exe 6133.exe 6134.exe main.exe
+build all: phony 3311.exe 3452.exe 842.exe 3474.exe 3438.exe 3428+.exe 4277.exe 3555+.exe 4278.exe 55.exe 800.exe 4279.exe 691.exe 2070.exe 4461.exe 3712.exe 3428.exe 3477.exe 02.exe 787.exe 3511.exe 693.exe 3540.exe 415.exe 3531.exe 4533.exe 3381.exe 63+.exe 798.exe 3537.exe 3564.exe 3330.exe 3587.exe 3598.exe 3625.exe 788.exe demo.exe 3540+.exe 793.exe 3619.exe 791.exe 3644.exe 3652.exe 3715.exe 3588.exe 4518.exe 3432.exe RoboCom_2.exe 3601.exe 3555.exe 3559.exe 4519.exe 3593.exe 3589.exe 2074.exe 790+.exe 03.exe 786.exe 789.exe 790.exe 792.exe 791+.exe 793+.exe 794.exe 795.exe 796+.exe 837.exe 4383.exe 796.exe MergeSort.exe 797+.exe 836.exe 4382.exe 797.exe 799.exe 802.exe 847.exe 3322.exe 848.exe 849.exe 850.exe 854.exe 240.exe 30.exe 3325.exe 3329.exe 3400.exe 3475.exe 4122.exe 3512.exe unique.exe 692.exe 3541.exe 3543.exe 3748.exe 3752.exe 41.exe 4159.exe 4280.exe 42.exe 425.exe 4270.exe 4271.exe 2320.exe 43.exe 44.exe 4443.exe 4483.exe 4485.exe 4486.exe 4489.exe 4490+.exe 63++.exe 4490.exe 4492.exe 4493.exe RoboCom_1.exe 45.exe 4522.exe 4523+.exe 4523.exe RoboCom_3.exe 47.exe 49.exe 537.exe 600.exe 692+.exe 698.exe m_1.exe m_2.exe 01.exe 02+.exe 2021_2611.exe 03+.exe 04.exe 05.exe QSort.exe QuickPow.exe Dijtstra.exe Floyd.exe TopSort.exe dijkstra+.exe primeFactor.exe union_find_set.exe CMakeCXXCompilerId.exe 700.exe 703.exe 683.exe 627.exe 236+.exe Trapezoid_Counting.exe 733.exe 3321.exe 3326.exe 3753.exe 3835.exe 4110.exe 4114.exe 4118.exe 4444.exe 4460.exe 1.exe 4405.exe 2021_2610.exe 2021_2612.exe 236++.exe 236.exe 297.exe 456.exe 63.exe 148.exe 15.exe 23.exe 2319.exe 2666.exe 3.exe 8.exe 6132.exe 6133.exe 6134.exe main.exe
 
 # =============================================================================
 # Built-in targets

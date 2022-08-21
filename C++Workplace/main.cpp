@@ -2,55 +2,50 @@
 
 using namespace std;
 #define ll long long
-const int N = 1e5 + 10;
-int n, m;
-int num[N];
 
-int main() {
-    ios_base::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cout.tie(nullptr);
-    cin >> n >> m;
-    int x, lackNum = n;
-    while (m > 0) {
-        if (lackNum > m) {
-            while (m--) {
-                cout << '0';
-            }
-        } else {
-            m -= lackNum-1;
-            for (int i = 1; i < lackNum; i++) {
-                cin >> x;
-                cout << '0';
-                num[x]++;
-            }
 
-            lackNum = 0;
-            for (int i = 1; i <= n; i++) {
-                if (num[i] == 0) {
-                    lackNum++;
-                }
-            }
-            while (m--) {
-                cin >> x;
-                if(num[x] == 0) {
-                    lackNum--;
-                }
-                num[x] ++;
-                if(lackNum == 0) {
-                    break;
-                } else {
-                    cout << '0';
-                }
-            }
-            if(lackNum == 0) {
-                cout << '1';
-                for(int i=1; i<=n; i++) {
-                    lackNum += --num[i] == 0;
-                }
+struct TreeNode {
+    int val;
+    TreeNode *left;
+    TreeNode *right;
+
+    TreeNode() : val(0), left(nullptr), right(nullptr) {}
+
+    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+
+    TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+};
+
+class Solution {
+public:
+    int findMax(vector<int> &a, int l, int r) {
+        int ans = l;
+        for(int i=l; i<=r; i++) {
+            if(a[i] > a[ans]) {
+                ans = i;
             }
         }
+        return ans;
     }
+
+    TreeNode *constructMaximumBinaryTree(vector<int> &nums) {
+        return dfs(nums, 0, nums.size()-1);
+    }
+
+    TreeNode* dfs(vector<int> &nums, int l, int r) {
+        if(l > r) {
+            return nullptr;
+        }
+        int root = findMax(nums, l, r);
+        auto* node = new TreeNode(nums[root]);
+        node->left = dfs(nums, l, root-1);
+        node->right = dfs(nums, root+1, r);
+        return node;
+    }
+};
+
+int main() {
+    Solution s;
 
     return 0;
 }
