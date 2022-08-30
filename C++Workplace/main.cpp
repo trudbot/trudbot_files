@@ -1,51 +1,67 @@
-#include<bits/stdc++.h>
+#include<stdio.h>
 
-using namespace std;
-#define ll long long
+#include<stdlib.h>
 
+#include<string.h>
 
-struct TreeNode {
-    int val;
-    TreeNode *left;
-    TreeNode *right;
+#include<math.h>
 
-    TreeNode() : val(0), left(nullptr), right(nullptr) {}
+#include<time.h>
 
-    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+long long get_days(const char* from, const char* to);
 
-    TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
-};
+time_t convert(int year,int month,int day);
 
-class Solution {
-public:
-    int findMax(vector<int> &a, int l, int r) {
-        int ans = l;
-        for(int i=l; i<=r; i++) {
-            if(a[i] > a[ans]) {
-                ans = i;
-            }
-        }
-        return ans;
-    }
+int main()
 
-    TreeNode *constructMaximumBinaryTree(vector<int> &nums) {
-        return dfs(nums, 0, nums.size()-1);
-    }
+{
 
-    TreeNode* dfs(vector<int> &nums, int l, int r) {
-        if(l > r) {
-            return nullptr;
-        }
-        int root = findMax(nums, l, r);
-        auto* node = new TreeNode(nums[root]);
-        node->left = dfs(nums, l, root-1);
-        node->right = dfs(nums, root+1, r);
-        return node;
-    }
-};
+    const char* from="1983-01-08";
 
-int main() {
-    Solution s;
+    const char* to="2074-09-12";
+
+    long long days=get_days(from,to);
+
+    printf("From:%s\nTo:%s\n",from,to);
+
+    printf("%lld\n",days);
+
+    system("pause");
 
     return 0;
+
+}
+
+time_t convert(int year,int month,int day)
+
+{
+
+    tm info={0};
+
+    info.tm_year=year-1900;
+
+    info.tm_mon=month-1;
+
+    info.tm_mday=day;
+
+    return mktime(&info);
+
+}
+
+long long get_days(const char* from, const char* to)
+
+{
+
+    int year,month,day;
+
+    sscanf(from,"%d-%d-%d",&year,&month,&day);
+
+    long long fromSecond=convert(year,month,day);
+
+    sscanf(to,"%d-%d-%d",&year,&month,&day);
+
+    long long toSecond=convert(year,month,day);
+
+    return (toSecond-fromSecond)/24/3600;
+
 }
