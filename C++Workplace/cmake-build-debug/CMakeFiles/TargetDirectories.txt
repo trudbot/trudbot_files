@@ -146,6 +146,7 @@ D:/trudbot_files/C++Workplace/cmake-build-debug/CMakeFiles/683.dir
 D:/trudbot_files/C++Workplace/cmake-build-debug/CMakeFiles/627.dir
 D:/trudbot_files/C++Workplace/cmake-build-debug/CMakeFiles/Trapezoid_Counting.dir
 D:/trudbot_files/C++Workplace/cmake-build-debug/CMakeFiles/733.dir
+D:/trudbot_files/C++Workplace/cmake-build-debug/CMakeFiles/3308.dir
 D:/trudbot_files/C++Workplace/cmake-build-debug/CMakeFiles/3321.dir
 D:/trudbot_files/C++Workplace/cmake-build-debug/CMakeFiles/3322.dir
 D:/trudbot_files/C++Workplace/cmake-build-debug/CMakeFiles/3326.dir
@@ -170,6 +171,7 @@ D:/trudbot_files/C++Workplace/cmake-build-debug/CMakeFiles/456.dir
 D:/trudbot_files/C++Workplace/cmake-build-debug/CMakeFiles/63++.dir
 D:/trudbot_files/C++Workplace/cmake-build-debug/CMakeFiles/63+.dir
 D:/trudbot_files/C++Workplace/cmake-build-debug/CMakeFiles/63.dir
+D:/trudbot_files/C++Workplace/cmake-build-debug/CMakeFiles/1371.dir
 D:/trudbot_files/C++Workplace/cmake-build-debug/CMakeFiles/148.dir
 D:/trudbot_files/C++Workplace/cmake-build-debug/CMakeFiles/15.dir
 D:/trudbot_files/C++Workplace/cmake-build-debug/CMakeFiles/23.dir
