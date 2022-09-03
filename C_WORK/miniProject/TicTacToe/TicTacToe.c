@@ -2,45 +2,37 @@
 #include <windows.h>
 int map[4][4];
 
+void judge(int cnt, int *victory, int *fail, int *w) {
+	if(cnt == 2) {
+		*fail = 1;
+	} else if(cnt == -2) {
+		*victory = 1;
+	} else {
+		*w += abs(cnt);
+	}
+} 
+
 int getWeight(int r, int c) {
-	int w = 0, t, i;
-	for(i=1, t = 0; i<=3; i++) {
-		t += map[i][c];
-	}
-	w += (t == 2);
-	if(t == -2) {
-		w += 1000;
-	}
-	for(i = 1, t = 0; i<=3; i++) {
-		t += map[r][i];
-	}
-	w += (t == 2);
-	if(t == -2) {
-		w += 1000;
-	}
-	
+	int victory = 0, fail = 0, cnt = 0, w = 0;
+	cnt = map[1][c] + map[2][c] + map[3][c];
+	judge(cnt, &victory, &fail, &w);
+	cnt = map[r][1] + map[r][2] + map[r][3];
+	judge(cnt, &victory, &fail, &w);
 	if(r == c) {
-		w++;
-		for(i = 1, t = 0; i<=3; i++) {
-			t += map[i][i];
-		}
-		w += (t == 2);
-		if(t == -2) {
-			w += 1000;
-		}
+		cnt = map[1][1] + map[2][2] + map[3][3];
+		judge(cnt, &victory, &fail, &w);
+	} else if(r + c == 4) {
+		cnt = map[1][3] + map[2][2] + map[3][1];
+		judge(cnt, &victory, &fail, &w);
 	}
 	
-	if(r + c == 4) {
-		w++;
-		for(i = 3, t = 0; i<=3; i++) {
-			t += map[i][4-i];
-		}
-		w += (t == 2);
-		if(t == -2) {
-			w += 1000;
-		}
+	if(victory) {
+		return 1000;
+	} else if(fail) {
+		return 100;
+	} else {
+		return w;
 	}
-	return w;
 }
 
 void defense() {
@@ -81,11 +73,11 @@ int fail(int x) {
 
 void print() {
 	for(int i=1; i<=3; i++) {
-		if(i != 1) {
-			puts("-----------");
+		if(i == 1) {
+			puts("+ - + - + - +");
 		} 
 		for(int j=1; j<=3; j++) {
-			if(j != 1) {
+			if(j == 1) {
 				printf("|");
 			}
 			if(map[i][j] == 0) {
@@ -95,8 +87,9 @@ void print() {
 			} else {
 				printf(" X ");
 			}
+			printf("|");
 		}
-		puts("");
+		puts("\n+ - + - + - +");
 	}
 }
 
