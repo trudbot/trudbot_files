@@ -1,0 +1,73 @@
+# Project: END
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = main.o STUDENT.o ACCOUNT.o COMMON.o STUDENT_DAL.o ACCOUNT_DAL.o FILE.o STUDENT_BLL.o ACCOUNT_BLL.o Login_FRONT.o LoginServlet.o MAIN_FRONT.o AccountServlet.o ACCOUNT_FRONT.o StudentServlet.o STUDENT_FRONT.o
+LINKOBJ  = main.o STUDENT.o ACCOUNT.o COMMON.o STUDENT_DAL.o ACCOUNT_DAL.o FILE.o STUDENT_BLL.o ACCOUNT_BLL.o Login_FRONT.o LoginServlet.o MAIN_FRONT.o AccountServlet.o ACCOUNT_FRONT.o StudentServlet.o STUDENT_FRONT.o
+LIBS     = -L"D:/Dev-Cpp/MinGW64/lib" -L"D:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"D:/Dev-Cpp/MinGW64/include" -I"D:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"D:/Dev-Cpp/MinGW64/include" -I"D:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"D:/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = END.exe
+CXXFLAGS = $(CXXINCS) -std=c99
+CFLAGS   = $(INCS) -std=c99
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.c
+	$(CC) -c main.c -o main.o $(CFLAGS)
+
+STUDENT.o: STUDENT.c
+	$(CC) -c STUDENT.c -o STUDENT.o $(CFLAGS)
+
+ACCOUNT.o: ACCOUNT.c
+	$(CC) -c ACCOUNT.c -o ACCOUNT.o $(CFLAGS)
+
+COMMON.o: COMMON.c
+	$(CC) -c COMMON.c -o COMMON.o $(CFLAGS)
+
+STUDENT_DAL.o: STUDENT_DAL.c
+	$(CC) -c STUDENT_DAL.c -o STUDENT_DAL.o $(CFLAGS)
+
+ACCOUNT_DAL.o: ACCOUNT_DAL.c
+	$(CC) -c ACCOUNT_DAL.c -o ACCOUNT_DAL.o $(CFLAGS)
+
+FILE.o: FILE.c
+	$(CC) -c FILE.c -o FILE.o $(CFLAGS)
+
+STUDENT_BLL.o: STUDENT_BLL.c
+	$(CC) -c STUDENT_BLL.c -o STUDENT_BLL.o $(CFLAGS)
+
+ACCOUNT_BLL.o: ACCOUNT_BLL.c
+	$(CC) -c ACCOUNT_BLL.c -o ACCOUNT_BLL.o $(CFLAGS)
+
+Login_FRONT.o: Login_FRONT.c
+	$(CC) -c Login_FRONT.c -o Login_FRONT.o $(CFLAGS)
+
+LoginServlet.o: LoginServlet.c
+	$(CC) -c LoginServlet.c -o LoginServlet.o $(CFLAGS)
+
+MAIN_FRONT.o: MAIN_FRONT.c
+	$(CC) -c MAIN_FRONT.c -o MAIN_FRONT.o $(CFLAGS)
+
+AccountServlet.o: AccountServlet.c
+	$(CC) -c AccountServlet.c -o AccountServlet.o $(CFLAGS)
+
+ACCOUNT_FRONT.o: ACCOUNT_FRONT.c
+	$(CC) -c ACCOUNT_FRONT.c -o ACCOUNT_FRONT.o $(CFLAGS)
+
+StudentServlet.o: StudentServlet.c
+	$(CC) -c StudentServlet.c -o StudentServlet.o $(CFLAGS)
+
+STUDENT_FRONT.o: STUDENT_FRONT.c
+	$(CC) -c STUDENT_FRONT.c -o STUDENT_FRONT.o $(CFLAGS)
