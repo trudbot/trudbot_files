@@ -109,6 +109,7 @@ void Input() {
 	} else {
 		map[r][c] = 1;
 	}
+	system("cls"); 
 }
 
 
@@ -116,14 +117,12 @@ int main() {
 	for(int i=1; i<=5; i++) {
 		Input();
 		if(fail(1)) {
-			system("cls");
 			print();
 			puts("ÄãÓ®ÁË£¬ ¹Ú¾ü");
 			system("pause");
 			return 0;
 		}
 		defense();
-		system("cls");
 		if(fail(-1)) {
 			print();
 			puts("ÄãÊäÁË, loser");
