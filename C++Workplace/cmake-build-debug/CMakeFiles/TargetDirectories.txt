@@ -131,6 +131,7 @@ D:/trudbot_files/C++Workplace/cmake-build-debug/CMakeFiles/Floyd.dir
 D:/trudbot_files/C++Workplace/cmake-build-debug/CMakeFiles/TopSort.dir
 D:/trudbot_files/C++Workplace/cmake-build-debug/CMakeFiles/dijkstra+.dir
 D:/trudbot_files/C++Workplace/cmake-build-debug/CMakeFiles/primeFactor.dir
+D:/trudbot_files/C++Workplace/cmake-build-debug/CMakeFiles/stringHash.dir
 D:/trudbot_files/C++Workplace/cmake-build-debug/CMakeFiles/union_find_set.dir
 D:/trudbot_files/C++Workplace/cmake-build-debug/CMakeFiles/unique.dir
 D:/trudbot_files/C++Workplace/cmake-build-debug/CMakeFiles/baidu_star_1.dir

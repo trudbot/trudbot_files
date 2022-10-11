@@ -15,48 +15,40 @@
 5)如果a和b为0，c不为0，则输出"Not An Equation"。
 */
 
-# include <stdio.h>
-# include <math.h>
+#include <stdio.h>
+#include <math.h>
 
-int main (void)
+int main(void)
 {
     float a, b, c;
-    
     scanf("%f %f %f", &a, &b, &c);
-    
-    float delta = pow(b, 2)-4*a*c;
-    
-    if (a==0 && b==0 && c==0)
+    float delta = pow(b, 2) - 4 * a * c;
+    if (a == 0 && b == 0 && c == 0)
         printf("Zero Equation");
-    
-    else if (a==0 && b==0 && c!=0)
+    else if (a == 0 && b == 0 && c != 0)
         printf("Not An Equation");
-    
-    else if(a == 0)
-        printf("%.2f", -c/b);
-    
+    else if (a == 0)
+        printf("%.2f", -c / b);
     else if (delta == 0)
-        printf("%.2f", -b/(2*a));
-    
-    else if(delta > 0)
+        printf("%.2f", -b / (2 * a));
+    else if (delta > 0)
     {
-        printf("%.2f\n", (-b+sqrt(delta))/(2*a));
-        printf("%.2f", (-b-sqrt(delta))/(2*a));
+        printf("%.2f\n", (-b + sqrt(delta)) / (2 * a));
+        printf("%.2f", (-b - sqrt(delta)) / (2 * a));
     }
-    
     else if (delta < 0)
     {
         if (b != 0)
         {
-            printf("%.2f+%.2fi\n", -b/(2*a), sqrt(-delta)/(2*a));
-            printf("%.2f-%.2fi", -b/(2*a), sqrt(-delta)/(2*a));
+            printf("%.2f+%.2fi\n", -b / (2 * a), sqrt(-delta) / (2 * a));
+            printf("%.2f-%.2fi", -b / (2 * a), sqrt(-delta) / (2 * a));
         }
         else
         {
-            printf("0.00+%.2fi\n", sqrt(c/a));
-            printf("0.00-%.2fi", sqrt(c/a));
+            printf("0.00+%.2fi\n", sqrt(c / a));
+            printf("0.00-%.2fi", sqrt(c / a));
         }
     }
-    
+
     return 0;
 }
